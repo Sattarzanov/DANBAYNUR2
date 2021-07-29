@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+}
+
+
+.parentnav{
+  width: 100%;
+  margin: auto;
+  background-color: red;
+
+}
+
+.inlinenav{
+  display: inline-flex;
+}
+
+.list li{
+  list-style: none;
+  display: inline-flex;
+  margin-left: 80px;
+}
+
+.list li a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 25px;
+  transition: 1s;
+}
+
+.list li a:hover{
+  color: aqua;
+  transition: 1s;
+}
+
+.list i{
+  display: none;
+}
+
+.list li{
+  color: white;
+  font-size: 25px;
+  font-family: "Arial Black";
+  display: none;
+}
+
+
+@media (max-width:414px) {
+  .list li a{
+    display: none;
+  }
+  .list i{
+    font-size: 25px;
+    color: white;
+    display: block;
+    margin-left: 300px;
+    position: absolute;
+    top: 23px;
+  }
+  .list li{
+    display: block;
+    position: relative;
+    right: 50px;
+  }
+}
+
